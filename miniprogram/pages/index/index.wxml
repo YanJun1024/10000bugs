@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="../../images/10000bugs.png" class="logo"></image>
+  <!-- <view class="title">快速了解云开发</view> -->
+
+  <view class="top_tip">嗨~~让我们写够10000个bug</view>
+
+  <view class="power">
+    <form bindsumit="submit">
+      <view class="section">
+        <view class="title">标题：</view>
+        <input type="nickname" class="input" name="nickname" placeholder="起个名字 " />
+      </view>
+      <view class="section">
+        <view class="title">类型：</view>
+        <radio-group class="mg" name="gender">
+          <label>
+            <radio value="qian" />
+            前端
+          </label>
+          <label>
+            <radio value="hou" />
+            后端
+          </label>
+          <label>
+            <radio value="db" />
+            数据库
+          </label>
+          <label>
+            <radio value="others" />
+            其他
+          </label>
+        </radio-group>
+
+      </view>
+      <view class="section">
+        <view class="title">详情：</view>
+        <textarea placeholder="详细描写bug情况" name="textarea" />
+        
+       
+      </view>
+      <view class="btn"> 
+        <button form-type="submit" type="primary" size="default"> 提交 </button>
+        <button form-type="reset" type="default" size="default" style="background-color: #888888;color: white;"> 重置 </button>
+        </view>
+    </form>
+  </view>
+
+
+</view>
